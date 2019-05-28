@@ -1,36 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Hello All!</title>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<!-- Bulma CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-default bg-dark">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand	" href="/">Ojas Saxena</a>
-				</div>
-				<ul class="nav navbar-nav" style="display: inline-block;">
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="/next">Next</a></li>
-					<li><a href="/last">Last</a></li>
-				</ul>
-			</div>
-		</nav>
-			
-		<div class="container">
-			{% block body %}
-			{% endblock %}
+		<div class="container-fluid">
+			{% include "includes/_navbar.html" %}
 		</div>
 
-		</div>
-		
-		<!--JavaScript -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		{% block body %}
+		{% endblock %}
+
 	</body>
 </html>

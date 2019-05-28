@@ -4,15 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-	return render_template('index.html')
-
-@app.route('/next')
-def next():
-	return render_template('next.html')
-
-@app.route('/last')
-def last():
-	return render_template('last.html')
+	return render_template('information.html')
 
 if __name__ == '__main__':
-	app.run()
+	app.run(port = "4000")
