@@ -1,13 +1,11 @@
-
 # Trying-out-Flask
 
 A basic **flask application which implements a simple database** using MariaDB `(mysql  Ver 15.1 Distrib 10.1.37-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2)`.
 
-A simple website using [Bulma](https://bulma.io/ "Bulma Website") has been used for styling (no external CSS used!). A survey form has been made, in which entries will be submitted, and simultaneously stored in a MariaDB database.
+A simple website using [Bulma](https://bulma.io/ "Bulma Website") has been used for styling *(no external CSS used!)*. A survey form has been made, in which entries will be submitted, and simultaneously stored in a MariaDB database.
 
 **MariaDB is a newer version of MySQL** and uses same commands as MySQL.
 
----
 
 ## Instructions to Setup :
 
@@ -30,13 +28,9 @@ A simple website using [Bulma](https://bulma.io/ "Bulma Website") has been used 
 	* Now use this databse by a `USE prac;`
 	* Some basic MySQL commands can be found [here](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial "A Basic MySQL Tutorial")
 
----
-
 ## Working :
 
 * Open command line and enter your virtualenv venv.
 * Use `python app.py` and go to `localhost:5000` to show the webpage.
 * Take a Survey and click Submit.
 * Take a look at the contents of your database by a `SELECT * FROM prac;` and the entered data will be present.
-
-___
