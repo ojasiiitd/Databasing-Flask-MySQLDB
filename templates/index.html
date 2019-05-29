@@ -14,9 +14,10 @@
 		<div class="container-fluid">
 			{% include "includes/_navbar.html" %}
 		</div>
-		{% include "includes/_notifs.html" %}
 		{% block body %}
 		{% endblock %}
-
+		<div class="container">
+			{% include "includes/_notifs.html" %}
+		</div>
 	</body>
 </html>
