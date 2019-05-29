@@ -1,6 +1,8 @@
 from flask import Flask , render_template , flash , redirect , url_for , session , logging , request
 from flask_mysqldb import MySQL
-from wtforms import Form , StringField , TextAreaField , validators;
+from wtforms import Form , StringField , TextAreaField , validators
+import time
+import datetime
 
 app = Flask(__name__)
 
@@ -38,12 +40,14 @@ def survey():
 		name = form.name.data
 		email = form.email.data
 		sugg = form.sugg.data
-
+		ts = time.time()
+		timestamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+		
 		# Create Cursor
 		cur = mysql.connection.cursor()
 
 		# Execute query
-		cur.execute("insert into prac values(%s , %s , %s)" , (name , email , sugg))
+		cur.execute("insert into prac values(%s , %s , %s , %s)" , (name , email , sugg , timestamp))
 
 		# Commit to DB
 		mysql.connection.commit()
