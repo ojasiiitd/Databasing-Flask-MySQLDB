@@ -56,4 +56,4 @@ def survey():
 
 if __name__ == '__main__':
 	app.secret_key = "thisisthebestsecretkeyever"
-	app.run()
+	app.run(debug = True)
