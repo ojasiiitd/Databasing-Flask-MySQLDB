@@ -1,5 +1,3 @@
-
-
 # Trying-out-Flask
 
 A basic **flask application which implements a simple database** using MariaDB `(mysql  Ver 15.1 Distrib 10.1.37-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2)`.
