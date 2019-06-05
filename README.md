@@ -10,7 +10,7 @@ A simple website using [Bulma](https://bulma.io/ "Bulma Website") has been used 
 ## Instructions to Setup :
 
 * Fork this repo.
-* Use `git clone https://github.com/<your-github-username>/Trying-out-Flask.git` to clone this repo into your system
+* Use `git clone https://github.com/<your-github-username>/Databasing-Flask-MySQLDB.git` to clone this repo into your system
 
 * ### Python :
 	* Install pip3 on your system by `sudo apt-get install python3-pip` if not already installed.
